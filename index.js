@@ -37,7 +37,7 @@ function deepestOfBranch(branch, startingLvl){
   var deepestOfNodes = [{}];
   var counter = startingLvl;
   for(let i = 0; i <branch.length; i++){
-    var current = branch[i].querySelectorAll('>*');
+    var current = branch[i].querySelectorAll(' >*');
     counter++;
     var placeholder = 'NONE';
     while(current && current.length > 0){
